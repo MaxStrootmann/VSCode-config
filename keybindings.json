@@ -1,0 +1,92 @@
+// Place your key bindings in this file to override the defaultsauto[]
+[
+  // NAVIGATION
+  //terminal
+  {
+    "key": "ctrl+shift+a",
+    "command": "workbench.action.terminal.focusNext",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "ctrl+shift+b",
+    "command": "workbench.action.terminal.focusPrevious",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "ctrl+shift+j",
+    "command": "workbench.action.togglePanel"
+  },
+  {
+    "key": "ctrl+shift+n",
+    "command": "workbench.action.terminal.new",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "ctrl+shift+w",
+    "command": "workbench.action.terminal.kill",
+    "when": "terminalFocus"
+  },
+
+  //quickOpen
+
+  {
+    "before": ["<C-j>"],
+    "commands": ["workbench.action.quickOpenNavigateNextInFilePicker"],
+    "when": "inFilesPicker && inQuickOpen"
+  },
+  {
+    "before": ["<C-k>"],
+    "commands": ["workbench.action.quickOpenNavigatePreviousInFilePicker"],
+    "when": "inFilesPicker && inQuickOpen"
+  },
+  {
+    "before": ["<C-j>"],
+    "commands": ["workbench.action.quickOpenNavigateNext"],
+    "when": "inQuickOpen"
+  },
+  {
+    "before": ["<C-k>"],
+    "commands": ["workbench.action.quickOpenNavigatePrevious"],
+    "when": "inQuickOpen"
+  },
+  // FILE TREE
+  {
+    "command": "workbench.action.toggleSidebarVisibility",
+    "key": "ctrl+e"
+  },
+  {
+    "key": "a",
+    "command": "explorer.newFile",
+    "when": "filesExplorerFocus && !inputFocus"
+  },
+  {
+    "key": "shift+a",
+    "command": "explorer.newFolder",
+    "when": "explorerViewletFocus"
+  },
+  {
+    "command": "renameFile",
+    "key": "r",
+    "when": "filesExplorerFocus && !inputFocus"
+  },
+  {
+    "command": "deleteFile",
+    "key": "shift+d",
+    "when": "filesExplorerFocus && !inputFocus"
+  },
+  {
+    "key": "shift+n",
+    "command": "workbench.action.newWindow",
+    "when": "!explorerViewletFocus"
+  },
+
+  // EXTRA
+  {
+    "key": "ctrl+shift+5",
+    "command": "editor.emmet.action.matchTag"
+  },
+  {
+    "key": "ctrl+z",
+    "command": "workbench.action.toggleZenMode"
+  }
+]
