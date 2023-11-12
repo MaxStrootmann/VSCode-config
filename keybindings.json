@@ -14,7 +14,15 @@
   },
   {
     "key": "ctrl+shift+j",
-    "command": "workbench.action.togglePanel"
+    "command": "workbench.action.terminal.toggleTerminal"
+  },
+  {
+    "key": "ctrl+shift+e",
+    "command": "workbench.action.focusActiveEditorGroup"
+  },
+  {
+    "key": "ctrl+shift+k",
+    "command": "workbench.action.focusActiveEditorGroup"
   },
   {
     "key": "ctrl+shift+n",
@@ -30,23 +38,23 @@
   //quickOpen
 
   {
-    "key": "<C-j>",
-    "command": "workbench.action.quickOpenNavigateNextInFilePicker",
+    "key": "ctrl+j",
+    "command": "workbench.action.quickOpenSelectNextInFilePicker",
     "when": "inFilesPicker && inQuickOpen"
   },
   {
-    "key": "<C-k>",
-    "command": "workbench.action.quickOpenNavigatePreviousInFilePicker",
+    "key": "ctrl+k",
+    "command": "workbench.action.quickOpenSelectPreviousInFilePicker",
     "when": "inFilesPicker && inQuickOpen"
   },
   {
-    "key": "<C-j>",
-    "command": "workbench.action.quickOpenNavigateNext",
+    "key": "ctrl+j",
+    "command": "workbench.action.quickOpenSelectNext",
     "when": "inQuickOpen"
   },
   {
-    "key": "<C-k>",
-    "command": "workbench.action.quickOpenNavigatePrevious",
+    "key": "ctrl+k",
+    "command": "workbench.action.quickOpenSelectPrevious",
     "when": "inQuickOpen"
   },
   // FILE TREE
