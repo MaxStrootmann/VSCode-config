@@ -30,23 +30,23 @@
   //quickOpen
 
   {
-    "before": ["<C-j>"],
-    "commands": ["workbench.action.quickOpenNavigateNextInFilePicker"],
+    "key": "<C-j>",
+    "command": "workbench.action.quickOpenNavigateNextInFilePicker",
     "when": "inFilesPicker && inQuickOpen"
   },
   {
-    "before": ["<C-k>"],
-    "commands": ["workbench.action.quickOpenNavigatePreviousInFilePicker"],
+    "key": "<C-k>",
+    "command": "workbench.action.quickOpenNavigatePreviousInFilePicker",
     "when": "inFilesPicker && inQuickOpen"
   },
   {
-    "before": ["<C-j>"],
-    "commands": ["workbench.action.quickOpenNavigateNext"],
+    "key": "<C-j>",
+    "command": "workbench.action.quickOpenNavigateNext",
     "when": "inQuickOpen"
   },
   {
-    "before": ["<C-k>"],
-    "commands": ["workbench.action.quickOpenNavigatePrevious"],
+    "key": "<C-k>",
+    "command": "workbench.action.quickOpenNavigatePrevious",
     "when": "inQuickOpen"
   },
   // FILE TREE
