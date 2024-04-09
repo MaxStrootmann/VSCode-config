@@ -1,0 +1,140 @@
+{
+  "workbench.colorTheme": "Night Owl",
+  "editor.fontSize": 16,
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[prisma]": {
+    "editor.defaultFormatter": "Prisma.prisma"
+  },
+  "editor.minimap.enabled": false,
+  "breadcrumbs.enabled": false,
+  //Macros
+  "macros": {
+    "commentDown": ["editor.action.copyLinesDownAction", "cursorUp", "editor.action.addCommentLine", "cursorDown"],
+    "peekDefinition": ["editor.action.peekDefinition", "togglePeekWidgetFocus"]
+  },
+
+  //VIM
+  "vim.highlightedyank.enable": true,
+  "vim.highlightedyank.color": "#a9dc7660",
+  "vim.highlightedyank.duration": 500,
+
+  "vim.leader": "<Space>",
+  "vim.smartRelativeLine": true,
+  "editor.cursorSurroundingLines": 8,
+
+  "vim.normalModeKeyBindingsNonRecursive": [
+    // NAVIGATION
+    // switch b/w buffers
+    {
+      "before": ["<S-h>"],
+      "commands": [":bprevious"],
+      "when": ["editorFocus || (editorLangId == 'png' || resourceLangId == 'png')"]
+    },
+    {
+      "before": ["<S-l>"],
+      "commands": [":bnext"]
+    },
+
+    // splits
+    {
+      "before": ["leader", "v"],
+      "commands": [":vsplit"]
+    },
+    {
+      "before": ["leader", "s"],
+      "commands": [":split"]
+    },
+
+    // panes
+    {
+      "before": ["leader", "h"],
+      "commands": ["workbench.action.focusLeftGroup"]
+    },
+    {
+      "before": ["leader", "j"],
+      "commands": ["workbench.action.focusBelowGroup"]
+    },
+    {
+      "before": ["leader", "k"],
+      "commands": ["workbench.action.focusAboveGroup"]
+    },
+    {
+      "before": ["leader", "l"],
+      "commands": ["workbench.action.focusRightGroup"]
+    },
+
+    // NICE TO HAVE
+    {
+      "before": ["leader", "w"],
+      "commands": [":w!"]
+    },
+    {
+      "before": ["leader", "q"],
+      "commands": [":q!"]
+    },
+    {
+      "before": ["leader", "x"],
+      "commands": [":x!"]
+    },
+    {
+      "before": ["ctrl+h"],
+      "commands": [{ "command": "editor.action.showDefinitionPreviewHover" }]
+    },
+
+    //QUICKOPEN
+    {
+      "before": ["leader", "p"],
+      "commands": ["workbench.action.quickOpen"]
+    },
+    {
+      "before": ["<Leader>", "c", "p"],
+      "commands": ["workbench.action.showCommands"]
+    },
+    {
+      "before": ["<Leader>", "t"],
+      "commands": ["workbench.action.gotoSymbol"]
+    },
+
+    //open explorer
+    {
+      "before": ["leader", "e"],
+      "commands": ["workbench.explorer.fileView.focus"]
+    },
+
+    //faster vertical movement
+    {
+      "before": ["J"],
+      "after": ["5", "j"]
+    },
+    {
+      "before": ["K"],
+      "after": ["5", "k"]
+    },
+
+    //no highlighting
+    {
+      "before": ["<Leader>", "/"],
+      "commands": [":noh"]
+    }
+  ],
+
+  "vim.insertModeKeyBindingsNonRecursive": [
+    {
+      "before": ["j", "k"],
+      "after": ["<ESC>"]
+    }
+  ],
+  "zenMode.hideLineNumbers": false,
+  "liveServer.settings.donotShowInfoMsg": true,
+  "github.copilot.enable": {
+    "*": true,
+    "plaintext": false,
+    "markdown": false,
+    "scminput": false
+  },
+  "prettier.jsxSingleQuote": true,
+  "prettier.printWidth": 120,
+  "window.zoomLevel": 1,
+  "typescript.updateImportsOnFileMove.enabled": "always"
+}
